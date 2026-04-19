@@ -13,7 +13,7 @@ public class DaftarKataDriver_2511532012 {
 		System.out.println("Awal 	: " + a1);
 		
 		a1.ubahElemen(1, "Department");
-		System.out.println("Setelah Unah : " + a1);
+		System.out.println("Setelah Ubah : " + a1);
 		
 		String terhapus = a1.hapusElemen(0);
 		System.out.println("Terhapus : " + terhapus);
