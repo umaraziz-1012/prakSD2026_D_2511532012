@@ -1,5 +1,5 @@
 package Pekan4_2511532012;
-import java.util.*;
+
 public class QueueArrayDriver_2511532012 {
 	public static void main(String [] args) {
 		QueueArray_2511532012 queue_2511532012 = new QueueArray_2511532012(1000);
