@@ -15,7 +15,7 @@ public class RumahSakit_2511532012 {
         System.out.println("5. Cek Status Antrian");
         System.out.println("6. Keluar");
     }
-    // INSERT TAIL
+    // MASUKKAN PASIEN
     public static Pasien_2511532012 insertattail(Pasien_2511532012 head, String nama, String penyakit) {
         Pasien_2511532012 newP =
                 new Pasien_2511532012(nama, penyakit, noantrian);
@@ -31,7 +31,7 @@ public class RumahSakit_2511532012 {
         last.setnext(newP);
         return head;
     }
-    // DELETE HEAD
+    // PANGGIL EPESIEN
     public static Pasien_2511532012 deletehead(Pasien_2511532012 head) {
         if (head == null) {
             System.out.println("Antrian kosong");

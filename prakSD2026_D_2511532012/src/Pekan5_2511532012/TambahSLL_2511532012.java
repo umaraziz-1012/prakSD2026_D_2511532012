@@ -7,8 +7,7 @@ public class TambahSLL_2511532012 {
 	return new_node;
 }
 //FUNGSI MENAMBAHKAN NODE DI AKHIR SLL
-	public static NodeSLL_2511532012 insertAtEnd_2012 (NodeSLL_2511532012 head_2012, int value_2012) {
-	//BUAT SEBUAH NODE DENGAN NILAI
+	public static NodeSLL_2511532012 insertAtEnd_2012 (NodeSLL_2511532012 head_2012, int value_2012) {	//BUAT SEBUAH NODE DENGAN NILAI
 	NodeSLL_2511532012 newNode = new NodeSLL_2511532012(value_2012);
 	//JIKA LIST KOSONG MAKA VALUE JADI HEAD
 	if (head_2012 == null) {
