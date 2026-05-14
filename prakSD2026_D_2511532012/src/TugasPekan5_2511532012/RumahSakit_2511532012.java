@@ -14,6 +14,7 @@ public class RumahSakit_2511532012 {
         System.out.println("4. Cari Pasien");
         System.out.println("5. Cek Status Antrian");
         System.out.println("6. Keluar");
+        
     }
     // MASUKKAN PASIEN
     public static Pasien_2511532012 insertattail(Pasien_2511532012 head, String nama, String penyakit) {
