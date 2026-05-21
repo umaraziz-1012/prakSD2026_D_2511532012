@@ -49,7 +49,7 @@ public class InsertionSortGUI_2511532012 extends JFrame {
 		setSize(750, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setLayout(new BorderLayout());
+		getContentPane().setLayout(new BorderLayout());
 		
 		// Panel input
 		JPanel inputPanel_2012 = new JPanel(new FlowLayout());
@@ -78,10 +78,10 @@ public class InsertionSortGUI_2511532012 extends JFrame {
 		JScrollPane scrollPane_2012 = new JScrollPane(stepArea_2012);
 
 		// Tambahkan panel ke frame
-		add(inputPanel_2012, BorderLayout.NORTH);
-		add(panelArray_2012, BorderLayout.CENTER);
-		add(controlPanel_2012, BorderLayout.SOUTH);
-		add(scrollPane_2012, BorderLayout.EAST);
+		getContentPane().add(inputPanel_2012, BorderLayout.NORTH);
+		getContentPane().add(panelArray_2012, BorderLayout.WEST);
+		getContentPane().add(controlPanel_2012, BorderLayout.SOUTH);
+		getContentPane().add(scrollPane_2012, BorderLayout.EAST);
 
 		// Event Set Array
 		setButton_2012.addActionListener(e -> setArrayFromInput_2012());
