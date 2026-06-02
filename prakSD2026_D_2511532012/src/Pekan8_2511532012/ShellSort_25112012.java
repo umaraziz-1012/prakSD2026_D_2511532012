@@ -1,37 +1,37 @@
 package Pekan8_2511532012;
 
 public class ShellSort_25112012 {
-	public static void ShellSort(int[] A) {
-		int n = A.length;
-		int gap = n/2;
-		while (gap > 0 ) {
-			for (int i = gap; i<n ; i++) {
-				int temp = A[i];
-				int j = i;
-				while (j >= gap && A[j - gap] > temp) {
-					A[j] = A[j - gap];
-					j = j - gap;
+	public static void ShellSort(int[] A_2012) {
+		int n_2012 = A_2012.length;
+		int gap_2012 = n_2012/2;
+		while (gap_2012 > 0 ) {
+			for (int i_2012 = gap_2012; i_2012 < n_2012; i_2012++) {
+				int temp_2012 = A_2012[i_2012];
+				int j_2012 = i_2012;
+				while (j_2012 >= gap_2012 && A_2012[j_2012 - gap_2012] > temp_2012) {
+					A_2012[j_2012] = A_2012[j_2012 - gap_2012];
+					j_2012 = j_2012 - gap_2012;
 				}
-				A[j] = temp;
+				A_2012[j_2012] = temp_2012;
 			}
-			gap = gap / 2;
+			gap_2012 = gap_2012 / 2;
 		}
 	}
-	public static void printarray(int[] arr) {
-		for (int i : arr) 
-		System.out.print(i + " ");
+	public static void printarray(int[] arr_2012) {
+		for (int i_2012 : arr_2012) 
+		System.out.print(i_2012 + " ");
 		System.out.println();
 	}
 	
 	
-public static void main(String [] args) {
-	int [] data = {3,10,4,6,8,9,7,2,1,5};
+public static void main(String [] args_2012) {
+	int [] data_2012 = {3,10,4,6,8,9,7,2,1,5};
 	System.out.print("DATA SEBELUM : ");
-	printarray(data);
+	printarray(data_2012);
 	
-	ShellSort(data);
+	ShellSort(data_2012);
 	
 	System.out.print("DATA SESUDAH (SHELLSORT) ");
-	printarray(data);
+	printarray(data_2012);
 }
 }
